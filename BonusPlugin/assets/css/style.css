@@ -1,0 +1,101 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Menu align center */
+@media (min-width: 1000px){
+  .header-inner {
+      display: flex !important;
+      justify-content: space-evenly !important;
+      padding: 2.8rem 0 !important;
+      flex-direction: column !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+  }
+  }
+
+  /* Template CSS */
+  
+:root {
+  --border:solid #ffdc00;
+    --border-line: 10px var(--border);
+    --border-circle: 5px var(--border);
+    --circle-position:-24px;
+    --circle-padding: 15px;
+  }
+  .cstmfooter{
+      background: #ffdc00;
+      height:100px;
+  }
+  .parent-container{
+    
+      background: #f7f7f7ef;
+  }
+  .headblock{
+  
+      width:50%;
+      height:80px;
+      border-bottom: var(--border-line);
+      border-right: var(--border-line);
+      position: relative;
+  
+  }
+  .headdot{
+          position: absolute;
+          right:var(--circle-position);
+      }
+      .dot{
+          position: absolute;
+          top: 50px;
+          left:var(--circle-position);
+      }
+      .circle{
+          border-radius: 50%;
+          border: var(--border-circle);
+          background: #fff;
+          text-align: center;
+          padding:  var(--circle-padding);
+      }
+      .block{
+        
+          border-left: var( --border-line);
+         
+          position: relative;
+          padding-top:20px;
+      }
+    btn{
+      background:#ffdc00;
+    }
